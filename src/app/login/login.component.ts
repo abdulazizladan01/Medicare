@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Form } from '@angular/forms';
 
 @Component({
@@ -12,7 +13,7 @@ export class LoginComponent implements OnInit {
   passwordMessage : string;
    loginUserData;
 
-  constructor(){ 
+  constructor(private _router : Router){ 
     this.loginUserData = {
       'email' : '',
       'password' : ''
@@ -20,7 +21,16 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-      console.log(this.loginUserData)
+    if(this.loginUserData.email == "admin" && this.loginUserData.password == "password"){
+      this._router.navigateByUrl('/admin');
+    }else if(this.loginUserData.email == "doctor" && this.loginUserData.password == "password"){
+      this._router.navigateByUrl('/admin');
+    }else if(this.loginUserData.email == "nurse" && this.loginUserData.password == "password"){
+      this._router.navigateByUrl('/nurse');
+    }else if(this.loginUserData.email == "pharmacist" && this.loginUserData.password == "password"){
+      this._router.navigateByUrl('/pharmacist');
+    }
+      
   }
 
   ngOnInit(): void {

@@ -10,13 +10,25 @@ import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { AdminComponent } from './dashboard/admin/admin.component';
+import { DoctorComponent } from './dashboard/doctor/doctor.component';
+import { NurseComponent } from './dashboard/nurse/nurse.component';
+import { PharmacistComponent } from './dashboard/pharmacist/pharmacist.component';
+import { MessageComponent } from './dashboard/message/message.component';
+import { PatientComponent } from './dashboard/patient/patient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    AdminComponent,
+    DoctorComponent,
+    NurseComponent,
+    PharmacistComponent,
+    MessageComponent,
+    PatientComponent
   ],
   imports: [
     BrowserModule,
