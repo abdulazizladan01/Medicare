@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { Form } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-login',
@@ -11,26 +11,20 @@ export class LoginComponent implements OnInit {
 
   emailMessage : string;
   passwordMessage : string;
+  private users$;
    loginUserData;
 
-  constructor(private _router : Router){ 
+  constructor( private _auth : AuthService ){ 
     this.loginUserData = {
       'email' : '',
       'password' : ''
     }
   }
 
-  login(){
-    if(this.loginUserData.email == "admin" && this.loginUserData.password == "password"){
-      this._router.navigateByUrl('/admin');
-    }else if(this.loginUserData.email == "doctor" && this.loginUserData.password == "password"){
-      this._router.navigateByUrl('/admin');
-    }else if(this.loginUserData.email == "nurse" && this.loginUserData.password == "password"){
-      this._router.navigateByUrl('/nurse');
-    }else if(this.loginUserData.email == "pharmacist" && this.loginUserData.password == "password"){
-      this._router.navigateByUrl('/pharmacist');
-    }
-      
+  login(){    
+    this._auth.login(this.loginUserData);  
+    //return this._auth.login().
+    //subscribe(data => this.users$ = data);
   }
 
   ngOnInit(): void {

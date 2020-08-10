@@ -1,1 +1,21 @@
-<p>doctor works!</p>
+<mat-sidenav-container id="sidenavBody">
+    <mat-sidenav mode="over" align="start" id="sidenav" opened #nav>
+    <button mat-button (click)="nav.toggle()"><mat-icon>persons</mat-icon> Users</button>
+    <button mat-button matBadge="0" matBadgePosition="before" matBadgeColor="accent" (click)="nav.toggle()"><mat-icon>message</mat-icon> Messages</button>
+    <button mat-button (click)="nav.toggle()"><mat-icon>notifications</mat-icon> Notifications </button>
+    
+    <button mat-button> Logout </button>
+    </mat-sidenav>
+    <mat-toolbar color="accent">
+        <mat-toolbar-row>
+            <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+            <span fxFlex="1 1 auto"></span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-list>
+    <mat-list-item>Add/remove users to platform</mat-list-item>
+    <mat-list-item>View staff and alter roles on platform</mat-list-item>
+    <mat-list-item>View patients</mat-list-item>
+</mat-list> 
+</mat-sidenav-container>
+

@@ -1,0 +1,22 @@
+[
+    {
+        "email" : "admin",
+        "password" : "password",
+        "role" : "admin"
+    },
+    {
+        "email" : "doctor",
+        "password" : "password",
+        "role" : "doctor"
+    },
+    {
+        "email" : "nurse",
+        "password" : "password",
+        "role" : "nurse"
+    },
+    {
+        "email" : "pharmacist",
+        "password" : "password",
+        "role" : "pharmacist"
+    }
+]
