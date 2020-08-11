@@ -2,21 +2,25 @@
     {
         "email" : "admin",
         "password" : "password",
-        "role" : "admin"
+        "role" : "admin",
+        "token" : "header.payload.signature"
     },
     {
         "email" : "doctor",
         "password" : "password",
-        "role" : "doctor"
+        "role" : "doctor",
+        "token" : "header.payload.signature"
     },
     {
         "email" : "nurse",
         "password" : "password",
-        "role" : "nurse"
+        "role" : "nurse",
+        "token" : "header.payload.signature"
     },
     {
         "email" : "pharmacist",
         "password" : "password",
-        "role" : "pharmacist"
+        "role" : "pharmacist",
+        "token" : "header.payload.signature"
     }
 ]

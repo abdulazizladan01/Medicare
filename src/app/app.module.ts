@@ -18,6 +18,7 @@ import { NurseComponent } from './dashboard/nurse/nurse.component';
 import { PharmacistComponent } from './dashboard/pharmacist/pharmacist.component';
 import { MessageComponent } from './dashboard/message/message.component';
 import { PatientComponent } from './dashboard/patient/patient.component';
+import { PatientDetailsComponent } from './dashboard/patient/patient-details/patient-details.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PatientComponent } from './dashboard/patient/patient.component';
     NurseComponent,
     PharmacistComponent,
     MessageComponent,
-    PatientComponent
+    PatientComponent,
+    PatientDetailsComponent
   ],
   imports: [
     BrowserModule,
