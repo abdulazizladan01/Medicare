@@ -1,0 +1,26 @@
+[
+    {
+        "email" : "admin",
+        "password" : "password",
+        "role" : "admin",
+        "token" : "header.payload.signature"
+    },
+    {
+        "email" : "doctor",
+        "password" : "password",
+        "role" : "doctor",
+        "token" : "header.payload.signature"
+    },
+    {
+        "email" : "nurse",
+        "password" : "password",
+        "role" : "nurse",
+        "token" : "header.payload.signature"
+    },
+    {
+        "email" : "pharmacist",
+        "password" : "password",
+        "role" : "pharmacist",
+        "token" : "header.payload.signature"
+    }
+]

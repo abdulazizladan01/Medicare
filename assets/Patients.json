@@ -1,0 +1,24 @@
+[
+    {
+        "id" : 1, 
+        "first_name" : "Abdulaziz",
+        "last_name" : "Ladan",
+        "gender" : "male",
+        "date_of_birth" :  16-09-1988"",
+        "blood_group" : "O +ve",
+        "genotype" : "AA",
+        "height" : "1.83m",
+        "weight" : "90kg"
+    },
+    {
+        "id" : 2, 
+        "first_name" : "John",
+        "last_name" : "Smith",
+        "gender" : "male",
+        "date_of_birth" :  16-09-1947"",
+        "blood_group" : "AB +ve",
+        "genotype" : "AS",
+        "height" : "1.70m",
+        "weight" : "70kg"
+    }
+]
